@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../service';
+import {ProfileComponent} from  '../profile/profile.component'
 @Component({
   selector: 'app-google-auth',
   standalone: true,
-  imports: [],
+  imports: [ProfileComponent],
   templateUrl: './google-auth.component.html',
   styleUrl: './google-auth.component.css'
 })
