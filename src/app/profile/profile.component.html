@@ -1,0 +1,9 @@
+<div *ngIf="user">
+    <p>Welcome, {{ user.username }}!</p>
+    <p>Email: {{ user.email }}</p>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <div *ngIf="!user">
+    <p>You are not logged in.</p>
+    <a routerLink="/login">Login</a>
+  </div>
