@@ -15,7 +15,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) { }
 
   loginWithGoogle(): void {
-    const redirectUri = encodeURIComponent('https://bookingapk.netlify.app');
+    const redirectUri = encodeURIComponent('https://googleauth2.netlify.app');
     window.location.href = `${this.apiUrl}/auth/google?redirect_uri=${redirectUri}`;
   }
 
